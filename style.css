@@ -1750,6 +1750,22 @@ button[type=submit],
   border: 1px solid #dadada;
   padding: 45px 50px;
 }
+.woocommerce span.onsale {
+    min-height: 3.5em;
+    min-width: 3.5em;
+    padding: .3em .6em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.3;
+    border-radius: 100%;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1em;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
 
 /* Video Post */
 .blog-item-wrap .entry-video > iframe {
