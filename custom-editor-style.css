@@ -1,0 +1,611 @@
+/*
+custom-editor-style.css
+for tinymce
+
+*/
+
+
+body#tinymce.wp-editor a {
+  color:#337ab7;
+}
+
+body#tinymce.wp-editor p {
+
+  word-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  color: #6B6B6B;
+  font-size: 14px;
+
+}
+
+body#tinymce.wp-editor,
+body#tinymce.wp-editor h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor h6{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+body#tinymce.wp-editor code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+body#tinymce.wp-editor b,
+body#tinymce.wp-editor strong {
+    font-weight: 700;
+}
+
+
+
+
+body#tinymce.wp-editor pre {
+    border-left: 8px solid #ccc;
+    padding: 25px;
+    display: block;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+body#tinymce.wp-editor blockquote p{
+  font-size: 20px;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+body#tinymce.wp-editor blockquote {
+    margin: 0 0 20px;
+    border-left: 10px solid #aaa;
+    display: block;
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: normal;
+    color: #6a6a6a;
+    background: #efefef;
+    padding:25px 45px;
+    position: relative;
+
+}
+
+body#tinymce.wp-editor blockquote:before {
+    content: "\201C";
+    font-weight: bold;
+    font-size:85px;
+    color:#3d3d3d;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-family: 'Georgia';
+}
+body#tinymce.wp-editor blockquote:after {
+  content: "\201D";
+  font-weight: bold;
+  font-size: 85px;
+  color: #3d3d3d;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  font-family: 'Georgia';
+}
+
+/* Table */
+body#tinymce.wp-editor table thead tr {
+    background-color: #fbfbfb;
+}
+
+body#tinymce.wp-editor table tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+body#tinymce.wp-editor table, body#tinymce.wp-editor td, body#tinymce.wp-editor th {
+    border: 1px solid #ddd;
+    border-spacing: 0px;
+    padding: 8px;
+    line-height: 1.42857143;
+}
+
+
+body#tinymce.wp-editor dd {
+	margin: 0 1.5em 1.5em;
+}
+
+body#tinymce.wp-editor tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+
+body#tinymce.wp-editor .entry-content ol li,
+body#tinymce.wp-editor .entry-content ul li{
+	margin-bottom:10px;
+}
+
+
+body#tinymce.wp-editor .entry-content img{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+
+
+body#tinymce.wp-editor .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+body#tinymce.wp-editor .btn:focus,
+body#tinymce.wp-editor .btn:active:focus,
+body#tinymce.wp-editor .btn.active:focus,
+body#tinymce.wp-editor .btn.focus,
+body#tinymce.wp-editor .btn:active.focus,
+body#tinymce.wp-editor .btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+body#tinymce.wp-editor .btn:hover,
+body#tinymce.wp-editor .btn:focus,
+body#tinymce.wp-editor .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+body#tinymce.wp-editor .btn:active,
+body#tinymce.wp-editor .btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+body#tinymce.wp-editor .btn.disabled,
+body#tinymce.wp-editor .btn[disabled],
+body#tinymce.wp-editor fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+body#tinymce.wp-editor a.btn.disabled,
+body#tinymce.wp-editor fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+body#tinymce.wp-editor .btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+body#tinymce.wp-editor .btn-default:focus,
+body#tinymce.wp-editor .btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+body#tinymce.wp-editor .btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+body#tinymce.wp-editor .btn-default:active,
+body#tinymce.wp-editor .btn-default.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+body#tinymce.wp-editor .btn-default:active:hover,
+body#tinymce.wp-editor .btn-default.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-default:hover,
+body#tinymce.wp-editor .btn-default:active:focus,
+body#tinymce.wp-editor .btn-default.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-default:focus,
+body#tinymce.wp-editor .btn-default:active.focus,
+body#tinymce.wp-editor .btn-default.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-default.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+body#tinymce.wp-editor .btn-default:active,
+body#tinymce.wp-editor .btn-default.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-default.disabled:hover,
+body#tinymce.wp-editor .btn-default[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-default:hover,
+body#tinymce.wp-editor .btn-default.disabled:focus,
+body#tinymce.wp-editor .btn-default[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-default:focus,
+body#tinymce.wp-editor .btn-default.disabled.focus,
+body#tinymce.wp-editor .btn-default[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+body#tinymce.wp-editor .btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+body#tinymce.wp-editor .btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+body#tinymce.wp-editor .btn-primary:focus,
+body#tinymce.wp-editor .btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+body#tinymce.wp-editor .btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+body#tinymce.wp-editor .btn-primary:active,
+body#tinymce.wp-editor .btn-primary.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+body#tinymce.wp-editor .btn-primary:active:hover,
+body#tinymce.wp-editor .btn-primary.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-primary:hover,
+body#tinymce.wp-editor .btn-primary:active:focus,
+body#tinymce.wp-editor .btn-primary.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-primary:focus,
+body#tinymce.wp-editor .btn-primary:active.focus,
+body#tinymce.wp-editor .btn-primary.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+body#tinymce.wp-editor .btn-primary:active,
+body#tinymce.wp-editor .btn-primary.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-primary.disabled:hover,
+body#tinymce.wp-editor .btn-primary[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-primary:hover,
+body#tinymce.wp-editor .btn-primary.disabled:focus,
+body#tinymce.wp-editor .btn-primary[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-primary:focus,
+body#tinymce.wp-editor .btn-primary.disabled.focus,
+body#tinymce.wp-editor .btn-primary[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-primary.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+body#tinymce.wp-editor .btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+body#tinymce.wp-editor .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+body#tinymce.wp-editor .btn-success:focus,
+body#tinymce.wp-editor .btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+body#tinymce.wp-editor .btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+body#tinymce.wp-editor .btn-success:active,
+body#tinymce.wp-editor .btn-success.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+body#tinymce.wp-editor .btn-success:active:hover,
+body#tinymce.wp-editor .btn-success.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-success:hover,
+body#tinymce.wp-editor .btn-success:active:focus,
+body#tinymce.wp-editor .btn-success.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-success:focus,
+body#tinymce.wp-editor .btn-success:active.focus,
+body#tinymce.wp-editor .btn-success.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+body#tinymce.wp-editor .btn-success:active,
+body#tinymce.wp-editor .btn-success.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-success.disabled:hover,
+body#tinymce.wp-editor .btn-success[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-success:hover,
+body#tinymce.wp-editor .btn-success.disabled:focus,
+body#tinymce.wp-editor .btn-success[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-success:focus,
+body#tinymce.wp-editor .btn-success.disabled.focus,
+body#tinymce.wp-editor .btn-success[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-success.focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+body#tinymce.wp-editor .btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+body#tinymce.wp-editor .btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+body#tinymce.wp-editor .btn-info:focus,
+body#tinymce.wp-editor .btn-info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+body#tinymce.wp-editor .btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+body#tinymce.wp-editor .btn-info:active,
+body#tinymce.wp-editor .btn-info.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+body#tinymce.wp-editor .btn-info:active:hover,
+body#tinymce.wp-editor .btn-info.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-info:hover,
+body#tinymce.wp-editor .btn-info:active:focus,
+body#tinymce.wp-editor .btn-info.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-info:focus,
+body#tinymce.wp-editor .btn-info:active.focus,
+body#tinymce.wp-editor .btn-info.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-info.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+body#tinymce.wp-editor .btn-info:active,
+body#tinymce.wp-editor .btn-info.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-info.disabled:hover,
+body#tinymce.wp-editor .btn-info[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-info:hover,
+body#tinymce.wp-editor .btn-info.disabled:focus,
+body#tinymce.wp-editor .btn-info[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-info:focus,
+body#tinymce.wp-editor .btn-info.disabled.focus,
+body#tinymce.wp-editor .btn-info[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-info.focus {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+body#tinymce.wp-editor .btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+body#tinymce.wp-editor .btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+body#tinymce.wp-editor .btn-warning:focus,
+body#tinymce.wp-editor .btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+body#tinymce.wp-editor .btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+body#tinymce.wp-editor .btn-warning:active,
+body#tinymce.wp-editor .btn-warning.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+body#tinymce.wp-editor .btn-warning:active:hover,
+body#tinymce.wp-editor .btn-warning.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-warning:hover,
+body#tinymce.wp-editor .btn-warning:active:focus,
+body#tinymce.wp-editor .btn-warning.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-warning:focus,
+body#tinymce.wp-editor .btn-warning:active.focus,
+body#tinymce.wp-editor .btn-warning.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-warning.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+body#tinymce.wp-editor .btn-warning:active,
+body#tinymce.wp-editor .btn-warning.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-warning.disabled:hover,
+body#tinymce.wp-editor .btn-warning[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-warning:hover,
+body#tinymce.wp-editor .btn-warning.disabled:focus,
+body#tinymce.wp-editor .btn-warning[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-warning:focus,
+body#tinymce.wp-editor .btn-warning.disabled.focus,
+body#tinymce.wp-editor .btn-warning[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-warning.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+body#tinymce.wp-editor .btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+body#tinymce.wp-editor .btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+body#tinymce.wp-editor .btn-danger:focus,
+body#tinymce.wp-editor .btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+body#tinymce.wp-editor .btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+body#tinymce.wp-editor .btn-danger:active,
+body#tinymce.wp-editor .btn-danger.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+body#tinymce.wp-editor .btn-danger:active:hover,
+body#tinymce.wp-editor .btn-danger.active:hover,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-danger:hover,
+body#tinymce.wp-editor .btn-danger:active:focus,
+body#tinymce.wp-editor .btn-danger.active:focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-danger:focus,
+body#tinymce.wp-editor .btn-danger:active.focus,
+body#tinymce.wp-editor .btn-danger.active.focus,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+body#tinymce.wp-editor .btn-danger:active,
+body#tinymce.wp-editor .btn-danger.active,
+body#tinymce.wp-editor .open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+body#tinymce.wp-editor .btn-danger.disabled:hover,
+body#tinymce.wp-editor .btn-danger[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-danger:hover,
+body#tinymce.wp-editor .btn-danger.disabled:focus,
+body#tinymce.wp-editor .btn-danger[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-danger:focus,
+body#tinymce.wp-editor .btn-danger.disabled.focus,
+body#tinymce.wp-editor .btn-danger[disabled].focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-danger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+body#tinymce.wp-editor .btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+body#tinymce.wp-editor .btn-link {
+  font-weight: normal;
+  color: #337ab7;
+  border-radius: 0;
+}
+body#tinymce.wp-editor .btn-link,
+body#tinymce.wp-editor .btn-link:active,
+body#tinymce.wp-editor .btn-link.active,
+body#tinymce.wp-editor .btn-link[disabled],
+body#tinymce.wp-editor fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+body#tinymce.wp-editor .btn-link,
+body#tinymce.wp-editor .btn-link:hover,
+body#tinymce.wp-editor .btn-link:focus,
+body#tinymce.wp-editor .btn-link:active {
+  border-color: transparent;
+}
+body#tinymce.wp-editor .btn-link:hover,
+body#tinymce.wp-editor .btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+body#tinymce.wp-editor .btn-link[disabled]:hover,
+body#tinymce.wp-editor fieldset[disabled] .btn-link:hover,
+body#tinymce.wp-editor .btn-link[disabled]:focus,
+body#tinymce.wp-editor fieldset[disabled] .btn-link:focus {
+  color: #777;
+  text-decoration: none;
+}
+body#tinymce.wp-editor .btn-lg,
+body#tinymce.wp-editor .btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+body#tinymce.wp-editor .btn-sm,
+body#tinymce.wp-editor .btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+body#tinymce.wp-editor .btn-xs,
+body#tinymce.wp-editor .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+body#tinymce.wp-editor .btn-block {
+  display: block;
+  width: 100%;
+}
+body#tinymce.wp-editor .btn-block + .btn-block {
+  margin-top: 5px;
+}
+body#tinymce.wp-editor input[type="submit"].btn-block,
+body#tinymce.wp-editor input[type="reset"].btn-block,
+body#tinymce.wp-editor input[type="button"].btn-block {
+  width: 100%;
+}
+
