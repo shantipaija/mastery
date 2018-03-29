@@ -1026,8 +1026,7 @@ img.custom-logo, .brand-name{
   }
 }
 
-@media (
-  : 1024px) {
+@media (min-width: 1024px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }

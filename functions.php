@@ -60,7 +60,7 @@ if (! function_exists('mastery_setup')) :
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
 
-          add_theme_support( 'custom-logo' );
+
 
           add_theme_support( 'custom-header', array(
   	'wp-head-callback' => 'theme_slug_header_style',
@@ -110,12 +110,12 @@ function theme_slug_header_style() {
         //16:9 ratio
         add_image_size('mastery-featured', 750, 422, true);
         add_image_size('mastery-featured-fullwidth', 1140, 641, true);
+        add_image_size( 'mastery-about-portfolio', 360, 276, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
               'primary'      => esc_html__('Primary Menu', 'mastery'),
               'footer-links' => esc_html__('Footer Links', 'mastery'),// secondary nav in footer
-              'design01'      => esc_html__('Design01 Menu', 'mastery'),
           ));
 
         // Enable support for Post Formats.
@@ -233,78 +233,6 @@ function mastery_widgets_init()
         'before_title'  => '<h3 class="widgettitle">',
         'after_title'   => '</h3>',
     ));
-
-    /* Design 01 is page template that has its own widgets and sidebar */
-
-    register_sidebar(array(
-      'name'          => esc_html__('Sidebar for Design 01 page', 'mastery'),// add to translation
-      'id'            => 'sidebar-design01',
-        'description'   => esc_html__( 'Displayed on Page types where Template is chosen as "Design01 Page". Page Editor > Page Attributes > Template > Design01 Page', 'mastery' ),
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</aside>',
-      'before_title'  => '<h3 class="widget-title">',
-      'after_title'   => '</h3>',
-      ));
-
-  // registering the Front Page: Content Top Section
-    register_sidebar( array(
-      'name'          => esc_html__( 'Design01 Page Section 1', 'mastery' ),
-      'id'            => 'mastery_design01_section1',
-      'description'   => esc_html__( 'Displayed on Page types where Template is chosen as "Design01 Page". Page Editor > Page Attributes > Template > Design01 Page', 'mastery' ),
-        // 'before_widget' => '<section id="%1$s" class="widget %2$s clearfix">',
-      'before_widget' => '<section id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</section>',
-      'before_title'  => '<h2 class="widget-title section-heading  text-uppercase"><span>',
-      'after_title'   => '</span></h2>',
-      ) );
-
-
-      register_sidebar(array(
-          'id'            => 'footer-design01-widget-1',
-          'name'          => esc_html__('Footer Design01 Widget 1', 'mastery'),
-          'description'   => esc_html__('Used for footer widget area', 'mastery'),
-          'before_widget' => '<div id="%1$s" class="widget %2$s">',
-          'after_widget'  => '</div>',
-          'before_title'  => '<h3 class="widgettitle">',
-          'after_title'   => '</h3>',
-      ));
-      register_sidebar(array(
-          'id'            => 'footer-design01-widget-2',
-          'name'          => esc_html__('Footer Design01 Widget 2', 'mastery'),
-          'description'   => esc_html__('Used for footer widget area', 'mastery'),
-          'before_widget' => '<div id="%1$s" class="widget %2$s">',
-          'after_widget'  => '</div>',
-          'before_title'  => '<h3 class="widgettitle">',
-          'after_title'   => '</h3>',
-      ));
-      register_sidebar(array(
-          'id'            => 'footer-design01-widget-3',
-          'name'          => esc_html__('Footer Design01 Widget 3', 'mastery'),
-          'description'   => esc_html__('Used for footer widget area', 'mastery'),
-          'before_widget' => '<div id="%1$s" class="widget %2$s">',
-          'after_widget'  => '</div>',
-          'before_title'  => '<h3 class="widgettitle">',
-          'after_title'   => '</h3>',
-      ));
-      register_sidebar(array(
-          'id'            => 'footer-design01-widget-4',
-          'name'          => esc_html__('Footer Design01 Widget 4', 'mastery'),
-          'description'   => esc_html__('Used for footer widget area', 'mastery'),
-          'before_widget' => '<div id="%1$s" class="widget %2$s">',
-          'after_widget'  => '</div>',
-          'before_title'  => '<h3 class="widgettitle">',
-          'after_title'   => '</h3>',
-      ));
-      register_sidebar(array(
-          'id'            => 'footer-design01-widget-5',
-          'name'          => esc_html__('Footer Design01 Widget 5', 'mastery'),
-          'description'   => esc_html__('Used for footer widget area', 'mastery'),
-          'before_widget' => '<div id="%1$s" class="widget %2$s">',
-          'after_widget'  => '</div>',
-          'before_title'  => '<h3 class="widgettitle">',
-          'after_title'   => '</h3>',
-      ));
-
     register_widget('mastery_Social_Widget');
     register_widget('mastery_Popular_Posts');
     register_widget('mastery_Categories');
