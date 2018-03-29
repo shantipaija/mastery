@@ -195,7 +195,14 @@ function mastery_widgets_init()
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
-
+    register_sidebar(array(
+        'name'          => esc_html__('Sidebar for blog page', 'mastery'),// add to translation
+        'id'            => 'sidebar-blog',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
 
     register_sidebar(array(
         'id'            => 'footer-widget-1',
