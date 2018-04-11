@@ -99,9 +99,9 @@ class mastery_Welcome {
 	 */
 	public function mastery_welcome_register_menu() {
 		$action_count = $this->count_actions();
-		$title        = $action_count > 0 ? 'About mastery <span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : 'About mastery';
+		$title        = $action_count > 0 ? 'About mastery <span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : 'About Mastery';
 
-		add_theme_page( 'About mastery', $title, 'edit_theme_options', 'mastery-welcome', array(
+		add_theme_page( 'About Mastery', $title, 'edit_theme_options', 'mastery-welcome', array(
 			$this,
 			'mastery_welcome_screen',
 		) );
@@ -367,10 +367,10 @@ class mastery_Welcome {
 
 		<div class="wrap about-wrap epsilon-wrap">
 
-			<h1><?php echo __( 'Welcome to mastery! - Version ', 'mastery' ) . $mastery['Version']; ?></h1>
+			<h1><?php echo __( 'Welcome to Mastery! - Version ', 'mastery' ) . $mastery['Version']; ?></h1>
 
 			<div
-				class="about-text"><?php echo esc_html__( 'mastery is now installed and ready to use! Get ready to build something beautiful. We hope you enjoy it! We want to make sure you have the best experience using mastery and that is why we gathered here all the necessary information for you. We hope you will enjoy using mastery, as much as we enjoy creating great products.', 'mastery' ); ?></div>
+				class="about-text"><?php echo esc_html__( 'Mastery is now installed and ready to use! Get ready to build something beautiful. We hope you enjoy it! We want to make sure you have the best experience using Mastery and that is why we gathered here all the necessary information for you. We hope you will enjoy using mastery, as much as we enjoy creating great products.', 'mastery' ); ?></div>
 
 			<div class="wp-badge epsilon-welcome-logo"></div>
 

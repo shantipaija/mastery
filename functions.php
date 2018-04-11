@@ -60,7 +60,7 @@ if (! function_exists('mastery_setup')) :
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
 
-
+          add_theme_support( 'custom-logo' );
 
           add_theme_support( 'custom-header', array(
   	'wp-head-callback' => 'theme_slug_header_style',
@@ -110,12 +110,12 @@ function theme_slug_header_style() {
         //16:9 ratio
         add_image_size('mastery-featured', 750, 422, true);
         add_image_size('mastery-featured-fullwidth', 1140, 641, true);
-        add_image_size( 'mastery-about-portfolio', 360, 276, true);
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
               'primary'      => esc_html__('Primary Menu', 'mastery'),
               'footer-links' => esc_html__('Footer Links', 'mastery'),// secondary nav in footer
+
           ));
 
         // Enable support for Post Formats.
@@ -240,6 +240,54 @@ function mastery_widgets_init()
         'before_title'  => '<h3 class="widgettitle">',
         'after_title'   => '</h3>',
     ));
+
+
+      register_sidebar(array(
+          'id'            => 'footer-design01-widget-1',
+          'name'          => esc_html__('Footer Design01 Widget 1', 'mastery'),
+          'description'   => esc_html__('Used for footer widget area', 'mastery'),
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h3 class="widgettitle">',
+          'after_title'   => '</h3>',
+      ));
+      register_sidebar(array(
+          'id'            => 'footer-design01-widget-2',
+          'name'          => esc_html__('Footer Design01 Widget 2', 'mastery'),
+          'description'   => esc_html__('Used for footer widget area', 'mastery'),
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h3 class="widgettitle">',
+          'after_title'   => '</h3>',
+      ));
+      register_sidebar(array(
+          'id'            => 'footer-design01-widget-3',
+          'name'          => esc_html__('Footer Design01 Widget 3', 'mastery'),
+          'description'   => esc_html__('Used for footer widget area', 'mastery'),
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h3 class="widgettitle">',
+          'after_title'   => '</h3>',
+      ));
+      register_sidebar(array(
+          'id'            => 'footer-design01-widget-4',
+          'name'          => esc_html__('Footer Design01 Widget 4', 'mastery'),
+          'description'   => esc_html__('Used for footer widget area', 'mastery'),
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h3 class="widgettitle">',
+          'after_title'   => '</h3>',
+      ));
+      register_sidebar(array(
+          'id'            => 'footer-design01-widget-5',
+          'name'          => esc_html__('Footer Design01 Widget 5', 'mastery'),
+          'description'   => esc_html__('Used for footer widget area', 'mastery'),
+          'before_widget' => '<div id="%1$s" class="widget %2$s">',
+          'after_widget'  => '</div>',
+          'before_title'  => '<h3 class="widgettitle">',
+          'after_title'   => '</h3>',
+      ));
+
     register_widget('mastery_Social_Widget');
     register_widget('mastery_Popular_Posts');
     register_widget('mastery_Categories');
@@ -371,9 +419,13 @@ function mastery_scripts()
 		if ( of_get_option( 'cfa_color' ) ) {
 			$custom_css .= '.cfa-text { color: ' . of_get_option( 'cfa_color' ) . ';}';
 		}
-		if ( of_get_option( 'cfa_btn_color' ) || of_get_option( 'cfa_btn_txt_color' ) ) {
-			$custom_css .= '.cfa-button {border-color: ' . of_get_option( 'cfa_btn_color' ) . '; color: ' . of_get_option( 'cfa_btn_txt_color' ) . ';}';
+		if ( of_get_option( 'cfa_btn_border_color' ) || of_get_option( 'cfa_btn_txt_color' ) ) {
+			$custom_css .= '.cfa-button {border-color: ' . of_get_option( 'cfa_btn_border_color' ) . '; color: ' . of_get_option( 'cfa_btn_txt_color' ) . ';}';
 		}
+    if ( of_get_option( 'cfa_btn_bg_color' ) ) {
+      $custom_css .= '.cfa-button {background-color: ' . of_get_option( 'cfa_btn_bg_color' ) . ';}';
+    }
+
 		if ( of_get_option( 'heading_color' ) ) {
 			$custom_css .= 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . of_get_option( 'heading_color' ) . ';}';
 		}
@@ -780,7 +832,7 @@ if ( !function_exists( 'socialmedia_share_button' ) ){
         // Do this on social media
         if ( $type == "full" || $type == "detail"){
 
-            $facebook   = "Share on Facebook";          $twitter    = "Tweet on Twitter";
+            $facebook   = "Sharen Facebook";          $twitter    = "Tweet on Twitter";
             $googleplus = "Share on Google+";           $pinterest  ="Pin on Pinterest";
             $whatsapp   = "Share on WhatsApp";          $telegram   = "Share on Telegram";
 

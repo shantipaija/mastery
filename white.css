@@ -329,7 +329,7 @@ i.social_icon.fa:hover {
   .navbar-default .navbar-nav > li:hover > a,
   .navbar-default .navbar-nav > li:hover > .caret,
   .dropdown-menu>li>.caret {
-    color:#6B6B6B ;
+    color:#00b9eb ;
   }
 
 
@@ -477,10 +477,6 @@ span.page-numbers.current {
 .page-links span {
 	color:#000;
 	background-color:#c7c7c7;
-}
-
-span.caret.mastery-dropdown:hover {
-    color: #00b9eb !important;
 }
 
 .tagcloud a:hover{

@@ -1,6 +1,6 @@
 # About Theme
 Theme Name: mastery
-Theme URI: https://wp.login.plus/masteryfulness/
+Theme URI: https://wp.login.plus/mastery/
 Version: 1.0.1
 Tested up to: WP 4.8
 
@@ -33,7 +33,7 @@ mastery is a clean minimal and responsive WordPress theme well suited for travel
 
 
 
-For questions, comments or bug reports, visit Login.Plus support forum (https://community.login.plus/forum/masteryfulness/).
+For questions, comments or bug reports, visit Login.Plus support forum (https://community.login.plus/forum/mastery/).
 
 # Installation
 
@@ -41,7 +41,7 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder of your WordPress installation. You will then be able to activate the theme.
 
-Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit https://wp.login.plus/doc/masteryfulness/
+Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit https://wp.login.plus/doc/mastery-theme-documentation/
 
 # Theme Features
 
@@ -62,7 +62,7 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 
 # Documentation
 
-Theme documentation is available on https://wp.login.plus/doc/masteryfulness/
+Theme documentation is available on https://wp.login.plus/doc/mastery-theme-documentation/
 
 # Changelog
 

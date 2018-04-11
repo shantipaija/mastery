@@ -73,7 +73,6 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 
 						</div><!-- /.navbar-header -->
 							<?php mastery_header_menu(); // main navigation ?>
-
 						</div><!-- /.site-navigation-inner -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->

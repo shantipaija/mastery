@@ -40,9 +40,9 @@ function mastery_welcome_customize_register( $wp_customize ) {
 				$wp_customize,
 				'epsilon-section-pro',
 				array(
-					'title'       => esc_html__( 'mastery', 'mastery' ),
+					'title'       => esc_html__( 'Mastery', 'mastery' ),
 					'button_text' => esc_html__( 'Documentation', 'mastery' ),
-					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/masteryfulness/' ),
+					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/mastery-theme-documentation/' ),
 					'priority'    => 0,
 				)
 			)

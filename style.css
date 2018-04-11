@@ -803,7 +803,7 @@ h1.site-title {
   float: left;
   clear: none;
   padding-left: 10px;
-  margin-top: 12px;
+  margin-top: 5px;
 }
 .site-branding {
   margin-top: 20px;
@@ -1749,22 +1749,6 @@ button[type=submit],
   border: 1px solid #dadada;
   padding: 45px 50px;
 }
-.woocommerce span.onsale {
-    min-height: 3.5em;
-    min-width: 3.5em;
-    padding: .3em .6em;
-    font-weight: 700;
-    position: absolute;
-    text-align: center;
-    line-height: 3.3;
-    border-radius: 100%;
-    background-color: #ff0000;
-    color: #fff;
-    font-size: 1em;
-    z-index: 9;
-    text-transform: uppercase;
-}
-
 
 /* Video Post */
 .blog-item-wrap .entry-video > iframe {
@@ -2426,8 +2410,15 @@ iframe#wp-custom-header-video {
 .social-telegram:hover {background-color: #4B97D1;}
 
 
-.social-small {     font-size: 16px;    }
-.social-medium {    font-size: 21px;    }
+.social-small {
+    font-size: 16px !important;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+   }
+.social-medium {
+  font-size: 21px;
+ }
 
 .social-large {
     font-size: 27px;
@@ -2438,13 +2429,13 @@ iframe#wp-custom-header-video {
 }
 
 @media screen and (min-width:1199px){
-    .social-sharing-button.social-facebook.social-medium:after {content: "Share on Facebook ";}
-    .social-sharing-button.social-twitter.social-medium:after {content: "Tweet on Twitter";}
-    .social-sharing-button.social-google.social-medium:after {content: "Share on Google+";}
-    .social-sharing-button.social-whatsapp.social-medium:after {content: "Share via WhatsApp";}
-    .social-sharing-button.social-telegram.social-medium:after {content: "Share via Telegram";}
-    .social-sharing-button.social-pinterest.social-medium:after {content: "Pin on Pinterest";}
-    .social-sharing-button{margin:0px;font-size:14px;width:70px;}
+    .social-sharing-button.social-facebook.social-medium:after {content: "Share";}
+    .social-sharing-button.social-twitter.social-medium:after {content: "Tweet";}
+    .social-sharing-button.social-google.social-medium:after {content: "Share";}
+    .social-sharing-button.social-whatsapp.social-medium:after {content: "WhatsApp";}
+    .social-sharing-button.social-telegram.social-medium:after {content: "Telegram";}
+    .social-sharing-button.social-pinterest.social-medium:after {content: "Pin";}
+    .social-sharing-button{margin:0px;font-size:14px;}
 }
 
 #bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar{

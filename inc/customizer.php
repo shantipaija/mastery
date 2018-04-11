@@ -319,7 +319,6 @@ function mastery_customizer( $wp_customize ) {
 	));
 
 
-
 	$wp_customize->add_setting('mastery[cfa_btn_txt_color]', array(
 		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
@@ -332,6 +331,19 @@ function mastery_customizer( $wp_customize ) {
 		'section' => 'mastery_action_options',
 	)));
 
+	$wp_customize->add_setting('mastery[cfa_btn_bg_color]', array(
+		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
+		'type'  => 'option',
+		'sanitize_callback' => 'mastery_sanitize_hexcolor',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mastery[cfa_btn_bg_color]', array(
+		'label' => __( 'CTA Button Color', 'mastery' ),
+		'description'   => __( 'Default used if no color is selected','mastery' ),
+		'section' => 'mastery_action_options',
+	)));
+
+
 	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mastery[element_color_hover]', array(
 		'label' => __( 'CTA Button Color on hover', 'mastery' ),
 		'description'   => __( 'Default used if no color is selected','mastery' ),
@@ -339,12 +351,12 @@ function mastery_customizer( $wp_customize ) {
 		'settings' => 'mastery[element_color_hover]',
 	)));
 
-	$wp_customize->add_setting('mastery[cfa_btn_color]', array(
+	$wp_customize->add_setting('mastery[cfa_btn_border_color]', array(
 		// 'default' => sanitize_hex_color( 'rgba(59, 59, 59, 0.8)' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'mastery_sanitize_hexcolor',
 	));
-	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mastery[cfa_btn_color]', array(
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mastery[cfa_btn_border_color]', array(
 		'label' => __( 'CTA Button Border Color', 'mastery' ),
 		'description'   => __( 'Default used if no color is selected','mastery' ),
 		'section' => 'mastery_action_options',

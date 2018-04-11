@@ -25,7 +25,7 @@ $count = $this->count_actions();
 		<p><?php esc_html_e( 'Even if you\'re a long-time WordPress user, we still believe you should give our documentation a very quick Read.', 'mastery' ) ?></p>
 		<p>
 			<a target="_blank"
-			   href="<?php echo esc_url( 'https://wp.login.plus/doc/masteryfulness/' ); ?>"><?php esc_html_e( 'Full documentation', 'mastery' ); ?></a>
+			   href="<?php echo esc_url( 'https://wp.login.plus/doc/mastery-theme-documentation/' ); ?>"><?php esc_html_e( 'Full documentation', 'mastery' ); ?></a>
 		</p>
 	</div><!--/.col-->
 
